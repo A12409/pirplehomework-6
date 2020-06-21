@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Favourite Food Momos</title>
+  
+  <style>
+      #document {
+        background-color: lightblue;
+      }
+
+      .text-content {
+        font-size: 32px;
+      }
+
+      .title {
+        padding-bottom: 30px;
+      }
+
+      #big-title {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 50px;
+      }
+      .center {
+        text-align: center;
+      }
+
+      .recipe-photo {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 30px;
+        border: 5px solid black;
+      }
+
+      .ingredients {
+        list-style: none;
+      }
+
+      .ingredients li:before {
+        content: "✏️";
+        padding-right: 10px;
+      }
+
+      .steps {
+        list-style-type: upper-roman;
+      }
+
+      p > span {
+        font-style: italic;
+      }
+
+      p > span:last-child {
+        text-decoration: underline;
+      }
+
+      .span-no-styles {
+        font-style: normal;
+        text-decoration: none;
+      }
+
+      .list-groups {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      .list-groups section {
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        padding: 20px 5px;
+        color: black;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      #list-ingredients {
+        width: 350px;
+        background-color: yellow;
+        text-decoration: underline;
+      }
+
+      #list-steps {
+        width: 350px;
+        background-color: green;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .list-groups {
+          width: 100%;
+        }
+
+        .list-groups section {
+          color: black;
+          border-radius: 0;
+          margin: 0;
+          box-shadow: none;
+        }
+
+        #list-steps, #list-ingredients {
+          background-color: blue;
+        }
+
+        .recipe-photo {
+          border-radius: 0;
+          max-width: 100%;
+          width: 100%;
+          border: 0;
+        }
+
+        .another-recipes {
+          display: none;
+        }
+      }
+
+      @media only screen and (min-width: 401px) and (max-width: 750px) {
+        #document {
+          background-color: white;
+          margin: 0 20px;
+        }
+      }
+
+      @media only screen and (min-width: 750px) {
+        #document {
+          margin: 0 200px;
+        }
+      }
+    </style>
+  </head>
+ 
+<body id="document">
+  <!--Usings of headings-->
+  <h1 class="title" id="big-title">My Favourite Food Momos:</h1>
+  
+  <!--how looks -->
+  <img src="https://cdn1.foodviva.com/static-content/food-images/snacks-recipes/veg-momos/veg-momos.jpg" class="recipe-photo"/>
+  
+  <!--description of the dish-->
+  <p class="text-content">
+    This is a <span class="span-no-styles">basic</span>, <span>no-fail</span> momos recipe.
+    Made from <span>basic ingredients</span> that you can <span>easily </span>find in your near stores.
+  </p>
+  
+  
+  
+  <h2 class="title center">Veg Momos Recipe with Chilli Sauce(step By step):</h2>
+  <!--Use of Paragraph-->
+  <div class="list-groups">
+    <section id="list-ingredients">
+      <p class="title center">Ingredients for VegMomos with Chilli Sauce: 👈</p>
+      
+      <!--Use of unordered list-->
+      <ul class="ingredients">
+      <!--Use of list-->
+       <li>1 Cup Binded All Purpose Flour.☕</li>
+       <li>2 tbsp Finely Chopped Cabbage.🥄🥄</li>
+       <li>2 tbsp Finely Chopped Carrot.🥄🥄</li>
+       <li>2 tbsp Finely Chopped Capsicum.🥣</li>
+       <li>2 tbsp Finely Chopped Onion.🥄🥄</li>
+       <li>1 tsp Finely Chopped Ginger.🥄</li>
+       <li>1 tsp Finely Chopped Garlic.🥄</li>
+       <li>1 tsp Red Chilli Sauce.🥄</li>
+       <li>½ tsp Green Chilli Sauce.✔🤞</li>
+       <li>1 tsp Soya Sauce.🥄</li>
+       <li>1 tsp Vinegar.🥄</li>
+       <li>½ tsp Ajinomoto.✔🤞</li>
+       <li>Salt according to taste.🧂😋</li>
+       <li>1 tbsp Oil.🛢👨‍🍳</li>
+      </ul>
+    </section>
+    
+    <!--use of ordered list-->
+    <section id="list-steps">
+      <h2 class="title center">How to make Veg momos:</h2>
+
+  <!--Use of list-->     
+      <ol class="steps">
+        <li>First of all in a nonstick pan heat oil, when oil get heated add ginger and garlic and cook it little.</li>
+        <li>Now add cabbage, carrot, onion and capsicum and cook all the veggies on high heat for little time then add red chilli sauce, green chilli sauce, soya sauce, vinegar ajinomoto and salt.
+Now cook all the ingredients for 5 minutes at high heat then take out the mixture in a plate and let it cool.</li>
+        <li>Take binded flour and make small puris from it, now put around 1 tsp of mixture the centre of puri and fold from both the ends, now give the shape of momos to it.</li>
+        <li>Now grease all the momos with oil and put in steamer and steam it for around 10-12 minutes, after 10-12 minutes take out the momos and serve with soya vinegar and chilli sauce. </li>
+      </ol>
+    </section>
+  </div>
+  <p class="text-content">---Now see how it's look yummy momos---</p>
+  
+  <!-- an image of the dish -->
+  
+   <img src="https://i2.wp.com/www.vegrecipesofindia.com/wp-content/uploads/2016/09/momos-chutney.jpg" class="recipe-photo"/>
+   
+  <br>    <!-- Break line -->
+  <br>
+  
+  <section class="another-recipes">
+  <p><h4 class="title">check out 5 other veg Momos recipes---</h4></p>
+  
+  <!--unordered list of other recipes-->
+  <ul>
+    <li>     <!--link #1 below -->
+      <a href="http://www.vegrecipesofindia.com/veg-momos-recipe-vegetable-momos/">Veg Recipes of India</a>
+    </li>
+    
+    <li>     <!--link #2 below -->
+      <a href="https://www.spiceupthecurry.com/momos-recipe-veg-momos">Spiceupthecurry</a>
+    </li>
+    
+    <li>     <!--link #3 below -->
+      <a href="http://www.sanjeevkapoor.com/recipe/Chicken-Momos.html">Sanjeev kapoor Chicken Momos</a>
+    </li>
+    
+    <li>     <!--link #4 below -->
+      <a href="https://www.thecuriouschickpea.com/tibetan-vegetable">Tibetan Vegetable Momos</a>
+    </li>
+    
+    <li>     <!--link #5 below -->
+      <a href="http://www.whiskaffair.com/chicken-momos">Whiskaffair</a>
+    </li>
+  </ul>
+  </section>
+  
+  <!--End of unordered list -->  
+  
+  <!-- Website that lists out all the various css properties -->
+    <!-- https://www.w3schools.com/cssref/ -->
+    
+  
+
+
+</body>
+</html>
